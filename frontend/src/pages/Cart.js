@@ -116,23 +116,6 @@ const Cart = () => {
 
     const handlePayment = async ()=>{
         await alert('Thank you for purchase with us!');
-        // const stripePromise = await loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY)
-        // const response = await fetch(SummaryApi.payment.url,{
-        //     method : SummaryApi.payment.method,
-        //     credentials: "include",
-        //     headers : {
-        //         "content-type":'application/json'
-        //     },
-        //     body : JSON.stringify({
-        //         cartItems : data
-        //     })
-        // })
-        // const responseData = await response.json()
-
-        // if(responseData?.id){
-        //     stripePromise.redirectToCheckout({sessionId : responseData.id})
-        // }
-        // console.log("payment response",responseData)
     }
 
     const totalQty = data.reduce((previousValue,currentValue)=> previousValue + currentValue.quantity,0)
