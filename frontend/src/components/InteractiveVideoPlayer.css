@@ -1,10 +1,10 @@
-/* InteractiveVideoPlayer.css */
+
 
 .video-player-container {
   position: relative;
   width: 100%;
   height: 0;
-  padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
+  padding-bottom: 56.25%;
   background-color: black;
   border-radius: 8px;
   overflow: hidden;
@@ -49,7 +49,6 @@
   margin-top: 8px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .offer-overlay {
     padding: 12px;
