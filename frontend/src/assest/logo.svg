@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 100" width="250" height="100">
+    <path d="M5 5h15l15 50h80l15-50h90v10H35L30 5H5v10zM25 65c0-5.5 4.5-10 10-10s10 4.5 10 10-4.5 10-10 10-10-4.5-10-10zm120 0c0-5.5 4.5-10 10-10s10 4.5 10 10-4.5 10-10 10-10-4.5-10-10z" fill="#000"/>
+
+    <text x="50" y="80" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#000">shopsphere</text>
+  </svg>
