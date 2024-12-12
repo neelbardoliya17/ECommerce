@@ -62,7 +62,6 @@ const CategoryProduct = () => {
 
       setFilterCategoryList(arrayOfCategory)
 
-      //format for url change when change on the checkbox
       const urlFormat = arrayOfCategory.map((el,index) => {
         if((arrayOfCategory.length - 1 ) === index  ){
           return `category=${el}`
@@ -95,11 +94,11 @@ const CategoryProduct = () => {
   return (
     <div className='container mx-auto p-4'>
 
-       {/***desktop version */}
+       {}
        <div className='hidden lg:grid grid-cols-[200px,1fr]'>
-           {/***left side */}
+           {}
            <div className='bg-white p-2 min-h-[calc(100vh-120px)] overflow-y-scroll'>
-                {/**sort by */}
+                {}
                 <div className=''>
                     <h3 className='text-base uppercase font-medium text-slate-500 border-b pb-1 border-slate-300'>Sort by</h3>
 
@@ -117,7 +116,7 @@ const CategoryProduct = () => {
                 </div>
 
 
-                {/**filter by */}
+                {}
                 <div className=''>
                     <h3 className='text-base uppercase font-medium text-slate-500 border-b pb-1 border-slate-300'>Category</h3>
 
@@ -139,7 +138,7 @@ const CategoryProduct = () => {
            </div>
 
 
-            {/***right side ( product ) */}
+            {}
             <div className='px-4'>
               <p className='font-medium text-slate-800 text-lg my-2'>Search Results : {data.length}</p>
 
