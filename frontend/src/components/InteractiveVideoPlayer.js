@@ -1,4 +1,4 @@
-// InteractiveVideoPlayer.js
+
 import React, { useEffect, useState, useRef } from "react";
 import ReactPlayer from "react-player";
 import fetchCategoryWiseProduct from "../helpers/fetchCategoryWiseProduct";
@@ -12,13 +12,12 @@ const InteractiveVideoPlayer = ({ category }) => {
 
   const intervalRef = useRef(null);
 
-  // Fetch products based on category
   const fetchData = async () => {
     setLoading(true);
     try {
       const categoryProduct = await fetchCategoryWiseProduct(category);
       const products = categoryProduct?.data || [];
-      console.log("Fetched Products:", products); // Debugging
+      console.log("Fetched Products:", products);
       setOverlayImages(products);
     } catch (error) {
       console.error("Error fetching overlay images:", error);
@@ -33,11 +32,10 @@ const InteractiveVideoPlayer = ({ category }) => {
   useEffect(() => {
     if (overlayImages.length > 0) {
       intervalRef.current = setInterval(() => {
-        setShowOverlay(true); // Show overlay
-        setTimeout(() => setShowOverlay(false), 2500); // Hide overlay after 2.5 seconds
-
+        setShowOverlay(true); 
+        setTimeout(() => setShowOverlay(false), 2500); 
         setCurrentOverlayIndex((prevIndex) => (prevIndex + 1) % overlayImages.length);
-      }, 5000); // Total interval of 5 seconds
+      }, 5000);
 
       return () => clearInterval(intervalRef.current);
     }
